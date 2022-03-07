@@ -4,7 +4,7 @@ Selon l'Organisation Mondiale de la santé, plus de 2,2 millions de cas de cance
 Le traitement du cancer du sein a connu de grandes avancées depuis 1980. Dans les pays à revenu élevé, le taux de mortalité par cancer du sein comparatif par âge a chuté de 40 % entre les années 1980 et 2020. Ces améliorations restent à reproduire dans les pays à revenu faible et intermédiaire.
 L’amélioration des résultats découle d’une détection précoce suivie d’un traitement efficace reposant sur l’association de la chirurgie, de la radiothérapie et de traitements médicamenteux.
 
-Ce projet de développement d'un outils de prédiction du risque d’infartus à partir des données cliniques s'inscrit dans cette démarche d'aide médicale au diagnostique.
+Ce projet de développement d'un outils de prédiction du risque de développer un cancer du sein à partir des données cliniques s'inscrit dans cette démarche d'aide médicale au diagnostique.
 
 ### Base de données (License : CC BY-NC-SA 4.0)
 
