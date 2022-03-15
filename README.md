@@ -37,7 +37,7 @@ institution = "University of California, Irvine, School of Information and Compu
 
 ### Métrique
 
-Ici, je choisi le score F1 comme métrique d'évaluation. Cette dernière permet de résumer les valeurs de la précision et de la sensiblité en une seule métrique. Dans l'analyse statistique de la classification binaire, c'est une mesure de la précision d'un test. Il est calculé à partir de la précision et de la sensiblité du test, où la précision est le nombre de vrais résultats positifs divisé par le nombre de tous les résultats positifs, y compris ceux qui ne sont pas identifiés correctement, et la sensiblité est le nombre de vrais résultats positifs divisé par le nombre de tous les échantillons qui auraient dû être identifiés comme positifs. 
+Ici, je choisis le score F1 comme métrique d'évaluation. Elle permet de résumer les valeurs de la précision et de la sensiblité en une seule métrique. Dans l'analyse statistique de la classification binaire, c'est une mesure de la précision d'un test. Il est calculé à partir de la précision et de la sensiblité du test, où la précision est le nombre de vrais résultats positifs divisé par le nombre de tous les résultats positifs, y compris ceux qui ne sont pas identifiés correctement, et la sensiblité est le nombre de vrais résultats positifs divisé par le nombre de tous les échantillons qui auraient dû être identifiés comme positifs. 
 
 ### Modèle
 
