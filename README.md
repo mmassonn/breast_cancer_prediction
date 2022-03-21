@@ -41,7 +41,7 @@ Ici, je choisis le score F1 comme métrique d'évaluation. Il permet de résumer
 
 ### Modèle
 
-En machine learning, la méthode ensembliste consiste à utiliser plusieurs algorithmes d'apprentissage automatique, en les mettant en commun pour obtenir des prédictions de meilleure qualité. 
+En Machine Learning, la méthode ensembliste consiste à utiliser plusieurs algorithmes d'apprentissage automatique, en les mettant en commun pour obtenir des prédictions de meilleure qualité. 
 
 Le bagging (BaggingClassifier), aussi appelé bootstrap aggregating, consiste à sous-échantillonner les données, en créant un data set pour chaque modèle (mais similaire à l’original). Puis, lors de la combinaison, on effectue l’analyse prédictive au travers d’un vote à la majorité pour la classification, ou en moyennant pour la régression.
 
