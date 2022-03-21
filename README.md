@@ -9,7 +9,7 @@ Vous pouvez trouver ci-dessus trois fichiers .ipynb. Le fichier "breast_cancer_a
 
 Selon l'Organisation Mondiale de la Santé, plus de 2,2 millions de cas de cancers du sein ont été recensés en 2020. Ce qui en fait le cancer le plus courant. Il constitue la première cause de mortalité par cancer chez les femmes. En ce qui concerne le cancer du sein, les disparités entre les pays à revenu faible et intermédiaire et ceux à revenu élevé sont considérables. En effet, le taux de survie à cinq ans s’élève à plus de 90 % dans les pays à revenu élevé, mais n’atteint que 66 % en Inde et 40 % en Afrique du Sud.
 
-Le traitement du cancer du sein a connu de grandes avancées depuis 1980. Dans les pays à revenu élevé, le taux de mortalité par cancer du sein comparatif par âge a chuté de 40 % entre les années 1980 et 2020. Ces améliorations restent à reproduire dans les pays à revenu faible et intermédiaire.
+Le traitement du cancer du sein a connu de grandes avancées depuis 1980. Dans les pays à revenu élevé, le taux de mortalité par cancer du sein comparatif par âge a chuté de 40 % entre les années 1980 et 2020. Ces améliorations restent à reproduire dans les pays à revenus faible et intermédiaire.
 
 L’amélioration des résultats découle d’une détection précoce suivie d’un traitement efficace reposant sur l’association de la chirurgie, de la radiothérapie et de traitements médicamenteux.
 
