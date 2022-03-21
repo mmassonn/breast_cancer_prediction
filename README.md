@@ -2,7 +2,7 @@
 
 L'objectif de ce projet est le développement d'un outil de prédiction du risque de développer un cancer du sein à partir des données cliniques. Ce projet s'inscrit dans une démarche d'aide médicale au diagnostique. N'ayant pas été validé, il ne doit pas être utilisé à des fins médicales. 
 
-Vous pouvez trouver ci-dessus trois fichiers .ipynb. Le fichier "breast_cancer_analyse.ipynb" réalise une analyse stastistique du jeu de données et le fichier "breast_cancer_prediction.ipynb" met en place un modèle de machine learning. Le fichier "breast_cancer_prediction_tuning.ipynb" optimise l'algorithme ayant obtenu le meilleur F1 score : AdaBoost.
+Vous pouvez trouver ci-dessus trois fichiers .ipynb. Le fichier "breast_cancer_analyse.ipynb" réalise une analyse stastistique du jeu de données et le fichier "breast_cancer_prediction.ipynb" met en place un modèle de Machine Learning. Le fichier "breast_cancer_prediction_tuning.ipynb" optimise l'algorithme ayant obtenu le meilleur F1 score : AdaBoost.
 
 
 ### Contexte
