@@ -1,13 +1,13 @@
 # Prediction du cancer du sein
 
-L'objectif de ce projet est le développement d'un outil de prédiction du risque de développer un cancer du sein à partir des données cliniques. Ce projet s'inscrit dans une démarche d'aide médicale au diagnostique mais n'ayant pas été validé, il ne doit pas être utilisé à des fins médicales. 
+L'objectif de ce projet est le développement d'un outil de prédiction du risque de développer un cancer du sein à partir des données cliniques. Ce projet s'inscrit dans une démarche d'aide médicale au diagnostique. N'ayant pas été validé, il ne doit pas être utilisé à des fins médicales. 
 
 Vous pouvez trouver ci-dessus trois fichiers .ipynb. Le fichier "breast_cancer_analyse.ipynb" réalise une analyse stastistique du jeu de données et le fichier "breast_cancer_prediction.ipynb" met en place un modèle de machine learning. Le fichier "breast_cancer_prediction_tuning.ipynb" optimise l'algorithme ayant obtenu le meilleur F1 score : AdaBoost.
 
 
 ### Contexte
 
-Selon l'Organisation Mondiale de la santé, plus de 2,2 millions de cas de cancer du sein ont été recensés en 2020. Ce qui en fait le cancer le plus courant. De plus le cancer du sein est la première cause de mortalité par cancer chez les femmes. En ce qui concerne le cancer du sein, les disparités entre les pays à revenu faible et intermédiaire et ceux à revenu élevé sont considérables. En effet, le taux de survie à cinq ans s’élève à plus de 90 % dans les pays à revenu élevé, mais n’atteint que 66 % en Inde et 40 % en Afrique du Sud.
+Selon l'Organisation Mondiale de la Santé, plus de 2,2 millions de cas de cancers du sein ont été recensés en 2020. Ce qui en fait le cancer le plus courant. Il constitue la première cause de mortalité par cancer chez les femmes. En ce qui concerne le cancer du sein, les disparités entre les pays à revenu faible et intermédiaire et ceux à revenu élevé sont considérables. En effet, le taux de survie à cinq ans s’élève à plus de 90 % dans les pays à revenu élevé, mais n’atteint que 66 % en Inde et 40 % en Afrique du Sud.
 
 Le traitement du cancer du sein a connu de grandes avancées depuis 1980. Dans les pays à revenu élevé, le taux de mortalité par cancer du sein comparatif par âge a chuté de 40 % entre les années 1980 et 2020. Ces améliorations restent à reproduire dans les pays à revenu faible et intermédiaire.
 
