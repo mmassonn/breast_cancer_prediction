@@ -1,8 +1,11 @@
 # Prediction du cancer du sein
 
 Veuillez trouver ci-dessus :
+
 -le fichier "breast_cancer_analyse.ipynb" dans lequel j'analyse le jeu de données;
+
 -le fichier "breast_cancer_prediction.ipynb" où je mets en place un modèle de Machine Learning;
+
 -le fichier "breast_cancer_prediction_tuning.ipynb" dans lequel j'optimise les hyperparamètres du modèle ayant obtenu le meilleur score F1. Dans notre cas il s'agit du modèle AdaBoost.
 
 
