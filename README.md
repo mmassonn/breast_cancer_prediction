@@ -1,17 +1,17 @@
 # Prediction du cancer du sein
 
-L'objectif de ce projet est le développement d'un outil de prédiction du risque de développer un cancer du sein à partir des données cliniques. Ce projet s'inscrit dans une démarche d'aide médicale au diagnostique. N'ayant pas été validé, il ne doit pas être utilisé à des fins médicales. 
-
-Vous pouvez trouver ci-dessus trois fichiers .ipynb. Le fichier "breast_cancer_analyse.ipynb" réalise une analyse stastistique du jeu de données et le fichier "breast_cancer_prediction.ipynb" met en place un modèle de Machine Learning. Le fichier "breast_cancer_prediction_tuning.ipynb" optimise l'algorithme ayant obtenu le meilleur F1 score : AdaBoost.
+Veuillez trouver ci-dessus :
+-le fichier "breast_cancer_analyse.ipynb" dans lequel j'analyse le jeu de données;
+-le fichier "breast_cancer_prediction.ipynb" où je mets en place un modèle de Machine Learning;
+-le fichier "breast_cancer_prediction_tuning.ipynb" dans lequel j'optimise les hyperparamètres du modèle ayant obtenu le meilleur score F1. Dans notre cas il s'agit du modèle AdaBoost.
 
 
 ### Contexte
 
-Selon l'Organisation Mondiale de la Santé, plus de 2,2 millions de cas de cancers du sein ont été recensés en 2020. Ce qui en fait le cancer le plus courant. Il constitue la première cause de mortalité par cancer chez les femmes. En ce qui concerne le cancer du sein, les disparités entre les pays à revenu faible et intermédiaire et ceux à revenu élevé sont considérables. En effet, le taux de survie à cinq ans s’élève à plus de 90 % dans les pays à revenu élevé, mais n’atteint que 66 % en Inde et 40 % en Afrique du Sud.
+Selon l'Organisation Mondiale de la Santé, le cancer du sein est le cancer le plus courant. Le traitement de ce type de cancer a connu de grandes avancées depuis 1980. Cependant les disparités entre les pays à revenu faible et intermédiaire et ceux à revenu élevé sont considérables. En effet, le taux de survie à cinq ans s’élève à plus de 90 % dans les pays à revenu élevé, mais n’atteint que 66 % en Inde et 40 % en Afrique du Sud. Aujourd'hui il convient d'homogénéiser ces progrès.
 
-Le traitement du cancer du sein a connu de grandes avancées depuis 1980. Dans les pays à revenu élevé, le taux de mortalité par cancer du sein comparatif par âge a chuté de 40 % entre les années 1980 et 2020. Ces améliorations restent à reproduire dans les pays à revenus faible et intermédiaire.
+Afin de réaliser cela, une détection précoce suivie d’un traitement efficace reposant sur l’association de la chirurgie, de la radiothérapie et de traitements médicamenteux sont nécessaires. C'est pourquoi, l'objectif de ce projet est de mettre en place un outil nous permettant de prédire le risque de développer un cancer du sein. Il s'inscrit dans une démarche d'aide médicale au diagnostique mais n'ayant pas été validé par des experts, il ne doit pas être utilisé à des fins médicales. 
 
-L’amélioration des résultats découle d’une détection précoce suivie d’un traitement efficace reposant sur l’association de la chirurgie, de la radiothérapie et de traitements médicamenteux.
 
 ### Base de données (License : CC BY-NC-SA 4.0)
 
@@ -33,18 +33,21 @@ author = "Dua, Dheeru and Graff, Casey",
 year = "2017",
 title = "{UCI} Machine Learning Repository",
 url = "http://archive.ics.uci.edu/ml",
-institution = "University of California, Irvine, School of Information and Computer Sciences" }
+institution = "University of California, Irvine, School of Information and Computer Sciences" }*
 
-### Métrique
 
-Ici, je choisis le score F1 comme métrique d'évaluation. Il permet de résumer les valeurs de la précision et de la sensiblité en une seule métrique. Dans l'analyse statistique de la classification binaire, c'est une mesure de la précision d'un test. Il est calculé à partir de la précision et de la sensiblité du test, où la précision est le nombre de vrais résultats positifs divisé par le nombre de tous les résultats positifs, y compris ceux qui ne sont pas identifiés correctement, et la sensiblité est le nombre de vrais résultats positifs divisé par le nombre de tous les échantillons qui auraient dû être identifiés comme positifs. 
+### Choix de la métrique
 
-### Modèle
+Je choisis le score F1 comme métrique d'évaluation. Il permet de résumer les valeurs de la précision et de la sensiblité en une seule métrique. Dans mon cas, la précision me permet d'être certain que lorsque l'agorithme prédit un cancer, le patient a réelement un cancer. Et la sensibilité me permet de détecter le maximum de cancers dans la population atteinte de ce dernier.
 
-En Machine Learning, la méthode ensembliste consiste à utiliser plusieurs algorithmes d'apprentissage automatique, en les mettant en commun pour obtenir des prédictions de meilleure qualité. 
+### Choix du modèle
 
-Le bagging (BaggingClassifier), aussi appelé bootstrap aggregating, consiste à sous-échantillonner les données, en créant un data set pour chaque modèle (mais similaire à l’original). Puis, lors de la combinaison, on effectue l’analyse prédictive au travers d’un vote à la majorité pour la classification, ou en moyennant pour la régression.
+En Machine Learning, les méthodes ensemblistes consistent à mettre en commun plusieurs algorithmes de Machine Learning affichant une performance modérée,afin d'obtenir des prédictions de meilleure qualité. 
 
-La forêt aléatoire (RandomForestClassifier) est une amélioration du bagging, qui est associée au concept de sous-espace aléatoire, et qui s’attache à créer de multiples arbres de décision pour l’apprentissage, avec des modèles entraînés sur des sous-ensembles de données légèrement différents. Vu que les échantillons sont créés de manière aléatoire, la corrélation entre les arbres est réduite, et on obtient un meilleur résultat à la fin. Cette méthode est de nos jours très utilisée par les data scientists.
+Ici j'essaie trois types de méthodes différentes :
 
-Le boosting (AdaBoostClassifier) va lui combiner les modèles classifieurs en les pondérant à chaque nouvelle prédiction, de façon à ce que les modèles ayant prédit correctement les fois précédentes aient un poids plus important que les modèles incorrects. Mieux un modèle classe, plus il devient important au fil du temps.
+1) Le bagging (BaggingClassifier), aussi appelé bootstrap aggregating, consiste à entraîner plusieurs algorithmes de Machine Learning sur différents jeux de données. Ces derniers provenant du jeu de données originale, chaque algorithme observe sous un angle unique les données. Puis, lors de la prédiction globale on effectue un vote à la majorité pour la classification.
+
+2) La forêt aléatoire (RandomForestClassifier) est une amélioration du bagging, qui est associée au concept de sous-espace aléatoire, et qui s’attache à créer de multiples arbres de décision pour l’apprentissage, avec des modèles entraînés sur des sous-ensembles de données légèrement différents. Vu que les échantillons sont créés de manière aléatoire, la corrélation entre les arbres est réduite, et on obtient un meilleur résultat à la fin.
+
+3) Le boosting (AdaBoostClassifier) va lui combiner les modèles classifieurs en les pondérant à chaque nouvelle prédiction, de façon à ce que les modèles ayant prédit correctement les fois précédentes aient un poids plus important que les modèles incorrects. Mieux un modèle classe, plus il devient important au fil du temps.
