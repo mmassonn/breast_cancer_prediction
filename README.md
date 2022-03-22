@@ -11,7 +11,7 @@ Veuillez trouver ci-dessus :
 
 ### Contexte
 
-Selon l'Organisation Mondiale de la Santé, le cancer du sein est le cancer le plus courant. Le traitement de ce type de cancer a connu de grandes avancées depuis 1980. Cependant les disparités entre les pays à revenu faible et intermédiaire et ceux à revenu élevé sont considérables. En effet, le taux de survie à cinq ans s’élève à plus de 90 % dans les pays à revenu élevé, mais n’atteint que 66 % en Inde et 40 % en Afrique du Sud. Aujourd'hui il convient d'homogénéiser ces progrès.
+Selon l'Organisation Mondiale de la Santé, le cancer du sein est le cancer le plus courant. Le traitement de ce type de cancer a connu de grandes avancées depuis 1980. Cependant les disparités entre les pays à revenus faible et intermédiaire et ceux à revenu élevé sont considérables. En effet, le taux de survie à cinq ans s’élève à plus de 90 % dans les pays à revenu élevé, mais n’atteint que 66 % en Inde et 40 % en Afrique du Sud. Aujourd'hui il convient d'homogénéiser ces progrès.
 
 Afin de réaliser cela, une détection précoce suivie d’un traitement efficace reposant sur l’association de la chirurgie, de la radiothérapie et de traitements médicamenteux sont nécessaires. C'est pourquoi, l'objectif de ce projet est de mettre en place un outil nous permettant de prédire le risque de développer un cancer du sein. Il s'inscrit dans une démarche d'aide médicale au diagnostique mais n'ayant pas été validé par des experts, il ne doit pas être utilisé à des fins médicales. 
 
