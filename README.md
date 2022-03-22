@@ -13,7 +13,7 @@ Selon l'Organisation Mondiale de la Santé, le cancer du sein est le cancer le p
 Afin de réaliser cela, une détection précoce suivie d’un traitement efficace reposant sur l’association de la chirurgie, de la radiothérapie et de traitements médicamenteux sont nécessaires. C'est pourquoi, l'objectif de ce projet est de mettre en place un outil nous permettant de prédire le risque de développer un cancer du sein. Il s'inscrit dans une démarche d'aide médicale au diagnostique mais n'ayant pas été validé par des experts, il ne doit pas être utilisé à des fins médicales. 
 
 
-### Base de données (License : CC BY-NC-SA 4.0)
+### Base de données
 
 Les caractéristiques de ce jeu de données sont calculées à partir d'une image numérisée d'une aspiration à l'aiguille fine (FNA) d'une masse mammaire. Elles décrivent les caractéristiques des noyaux cellulaires présents dans les images. Quelques-unes des images peuvent être trouvées sur 'https://pages.cs.wisc.edu/~street/images/'
 
@@ -42,7 +42,7 @@ Je choisis le score F1 comme métrique d'évaluation. Il permet de résumer les 
 
 ### Choix du modèle
 
-En Machine Learning, les méthodes ensemblistes consistent à mettre en commun plusieurs algorithmes de Machine Learning affichant une performance modérée,afin d'obtenir des prédictions de meilleure qualité. 
+En Machine Learning, les méthodes ensemblistes consistent à mettre en commun plusieurs algorithmes de Machine Learning affichant une performance modérée, afin d'obtenir des prédictions de meilleurs qualités. 
 
 Ici j'essaie trois types de méthodes différentes :
 
