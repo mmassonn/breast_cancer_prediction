@@ -1,4 +1,4 @@
-# Prediction du cancer du sein
+# Prédiction du risque de développer un cancer du sein
 
 Veuillez trouver ci-dessus :
 
